@@ -7,10 +7,7 @@ package Model;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-/**
- *
- * @author GIA KIET
- */
+
 public class HoaDonModel {
     protected int MaHD, MaKH, MaTK, MaSach, Soluong;
     protected long TongTien;
