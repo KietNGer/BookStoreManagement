@@ -50,8 +50,8 @@
 - B5: Run project, đăng nhập user: qly1, password: 123456 để chạy chương trình.
 
 
-# NẾU CÓ LỖI KHI CHẠY THỬ CHƯƠNG TRÌNH
-## LIÊN HỆ: `21522258@gm.uit.edu.vn` để được hỗ trợ (tuỳ vào lỗi, có thể có lỗi không hỗ trợ được, mong mọi người thông cảm)
+## NẾU CÓ LỖI KHI CHẠY THỬ CHƯƠNG TRÌNH
+### LIÊN HỆ: `21522258@gm.uit.edu.vn` để được hỗ trợ (tuỳ vào lỗi, có thể có lỗi không hỗ trợ được, mong mọi người thông cảm)
 
 
 
