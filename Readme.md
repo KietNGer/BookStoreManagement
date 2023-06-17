@@ -45,7 +45,7 @@
 
 - B1: Clone repo này về 
 - B2: Hãy đảm bảo máy bạn đã có các phần mềm để khởi chạy Oracle
-- B3: Tạo một user/password mới, chạy lần lượt file `createTable.sql` ->  `seq_constraint_trigger.sql` -> `function.sql` -> `procedure.sql` -> `data.sql` -> `baocao.sql`. **NHỚ COMMI ĐỂ CHƯƠNG TRÌNH CÓ THỂ CHẠY ỔN ĐỊNH**
+- B3: Tạo một user/password mới, chạy lần lượt file `createTable.sql` ->  `seq_constraint_trigger.sql` -> `function.sql` -> `procedure.sql` -> `data.sql` -> `baocao.sql`. **NHỚ COMMIT ĐỂ CHƯƠNG TRÌNH CÓ THỂ CHẠY ỔN ĐỊNH**
 - B4: Mở Netbeans thêm các thư viện trong `Library` và cài các plugin trong file `Lab6.pdf`
 - B5: Run project, đăng nhập user: qly1, password: 123456 để chạy chương trình.
 
