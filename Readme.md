@@ -50,6 +50,8 @@
 - B4: Mở Netbeans thêm các thư viện trong `Library` và cài các plugin trong file `Lab6.pdf`
 - B5: Run project, đăng nhập user: qly1, password: 123456 để chạy chương trình.
 
+## Ngoài ra có thể vào file dist để chạy phần mềm bằng cách click chuột phải vào BookStoreManagement.jar chọn Open with Java(TM) Platform SE binary
+
 
 ## NẾU CÓ LỖI KHI CHẠY THỬ CHƯƠNG TRÌNH
 ### LIÊN HỆ: `21522258@gm.uit.edu.vn` để được hỗ trợ (tuỳ vào lỗi, có thể có lỗi không hỗ trợ được, mong mọi người thông cảm)
