@@ -26,6 +26,7 @@
 >- Xem báo cáo
 >- In hoá đơn cho khách đăng kí
 >- In hoá đơn cho khách chưa đăng kí
+>- In phiếu nhập sách cho mội lần nhập
 
 ## Các công nghệ, ngôn ngữ sử dụng
 >- Ngôn ngữ lập trình: `JAVA`
