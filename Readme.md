@@ -50,7 +50,7 @@
 - B4: Mở Netbeans thêm các thư viện trong `Library` và cài các plugin trong file `Lab6.pdf`
 - B5: Run project, đăng nhập user: qly1, password: 123456 để chạy chương trình.
 
-## Ngoài ra có thể vào file dist để chạy phần mềm bằng cách click chuột phải vào BookStoreManagement.jar chọn **Open with --> Java(TM) Platform SE binary** (**KHÔNG KHUYẾN KHÍCH DO CÓ VÀI TÍNH NĂNG KHÔNG DÙNG ĐƯỢC KHI CHẠY FILE JAR**)
+## Ngoài ra có thể vào file dist để chạy phần mềm (**KHÔNG KHUYẾN KHÍCH DO CÓ VÀI TÍNH NĂNG KHÔNG DÙNG ĐƯỢC KHI CHẠY FILE JAR**)
 - B1: Clone repo này về 
 - B2: Hãy đảm bảo máy bạn đã có các phần mềm để khởi chạy Oracle. Tạo user: c##jv, password: java22
 - B3: Tạo một user/password mới, chạy lần lượt file `createTable.sql` ->  `seq_constraint_trigger.sql` -> `function.sql` -> `procedure.sql` -> `data.sql` -> `baocao.sql`. **NHỚ COMMIT ĐỂ CHƯƠNG TRÌNH CÓ THỂ CHẠY ỔN ĐỊNH**
