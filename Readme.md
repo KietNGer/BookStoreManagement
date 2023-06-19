@@ -59,5 +59,9 @@
 ## NẾU CÓ LỖI KHI CHẠY THỬ CHƯƠNG TRÌNH
 ### LIÊN HỆ: `21522258@gm.uit.edu.vn` để được hỗ trợ (tuỳ vào lỗi, có thể có lỗi không hỗ trợ được, mong mọi người thông cảm)
 
+### Một số user cho các role trong hệ thống
+>- Nhân viên: nv1/1234567
+>- Nhân viên kho: nv4/1234570
+
 
 
