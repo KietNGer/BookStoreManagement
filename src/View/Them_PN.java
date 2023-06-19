@@ -4,7 +4,6 @@
  */
 package View;
 
-import Connection.ConnectDB;
 import Controller.NhaPhanPhoiController;
 import Controller.PhieuNhapSachController;
 import Controller.SachController;
@@ -12,15 +11,10 @@ import Controller.TaiKhoanController;
 import Model.PhieuNhapSachModel;
 import Model.SachModel;
 import java.util.ArrayList;
-import java.util.Hashtable;
 import java.util.Iterator;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import net.sf.jasperreports.engine.JasperCompileManager;
-import net.sf.jasperreports.engine.JasperFillManager;
-import net.sf.jasperreports.engine.JasperPrint;
-import net.sf.jasperreports.engine.JasperReport;
-import net.sf.jasperreports.view.JasperViewer;
+
 
 /**
  *

@@ -4,7 +4,6 @@
  */
 package View;
 
-import Connection.ConnectDB;
 import Controller.HoaDonController;
 import Controller.SachController;
 import Model.SachModel;
@@ -14,12 +13,6 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import Controller.TaiKhoanController;
 import Model.HoaDonModel;
-import java.util.Hashtable;
-import net.sf.jasperreports.engine.JasperCompileManager;
-import net.sf.jasperreports.engine.JasperFillManager;
-import net.sf.jasperreports.engine.JasperPrint;
-import net.sf.jasperreports.engine.JasperReport;
-import net.sf.jasperreports.view.JasperViewer;
 
 /**
  *
