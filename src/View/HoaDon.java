@@ -38,8 +38,7 @@ public class HoaDon extends javax.swing.JFrame {
     public String TenDNHome, MatKhauHome;
     public TaiKhoanController tk = new TaiKhoanController();
     public HoaDonController hd = new HoaDonController();
-    public int ChucVu = tk.TraVeChucVu(TenDNHome, MatKhauHome);
-    DefaultTableModel table = new DefaultTableModel();
+    public DefaultTableModel table = new DefaultTableModel();
     public int ID;
     public String TenKH, TenNV, NgayTaoHD, TriGia;
     
@@ -80,7 +79,7 @@ public class HoaDon extends javax.swing.JFrame {
 
         jComboBox1.setBackground(new java.awt.Color(0, 204, 204));
         jComboBox1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mã hoá đơn", "Tên nhân viên", "Tên khách hàng" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mã hoá đơn" }));
 
         SearchBtn.setBackground(new java.awt.Color(0, 204, 204));
         SearchBtn.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
@@ -243,7 +242,7 @@ public class HoaDon extends javax.swing.JFrame {
     private void QlaiBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QlaiBtnActionPerformed
         // TODO add your handling code here:
         new Home(TenDNHome, MatKhauHome);
-        this.dispose();
+        dispose();
     }//GEN-LAST:event_QlaiBtnActionPerformed
 
     private void AddHDBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddHDBtnActionPerformed
@@ -262,7 +261,7 @@ public class HoaDon extends javax.swing.JFrame {
             return;
         } else {
             hdModel = hd.TimKiemHD(jComboBox1.getSelectedItem().toString(), Search_txt.getText());
-            Add(hdModel, Table_for_search);
+            hd.Add(hdModel, Table_for_search);
         } 
     }//GEN-LAST:event_SearchBtnActionPerformed
 
@@ -300,30 +299,13 @@ public class HoaDon extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jTable1MouseClicked
 
-    public void Add(ArrayList<HoaDonModel> hdModel, DefaultTableModel table){
-        for(HoaDonModel i : hdModel){
-            Object[] objTemp = null;
-            if(i.getMaKH() == 0){
-                String TenNV = hd.GetTenNV(i.getMaTK());
-                Object[] obj = {i.getMaHD(), "Khách vãng lai", TenNV, i.toString(i.getNgTaoHD()), i.getTongTien()};
-                objTemp = obj;
-            } else if(i.getMaKH() > 0) {
-                String TenNV = hd.GetTenNV(i.getMaTK());
-                String TenKH = hd.GetTenKH(i.getMaKH());
-                Object[] obj = {i.getMaHD(), TenKH, TenNV, i.toString(i.getNgTaoHD()), i.getTongTien()};
-                objTemp = obj;
-            }
-            table.addRow(objTemp);
-        }
-    }
-    
     public void GetTCHoaDon(){
         String[] title = {"Mã hoá đơn", "Tên khách hàng", "Tên nhân viên", "Ngày tạo hoá đơn", "Tổng hoá đơn"};
         table.setColumnIdentifiers(title);
         table.setRowCount(0);
         ArrayList<HoaDonModel> hdModel = new ArrayList<HoaDonModel>();
         hdModel = hd.getTCHoaDon();
-        Add(hdModel, table);
+        hd.Add(hdModel, table);
         jTable1.setModel(table);
         jTable1.setRowHeight(30);
     }

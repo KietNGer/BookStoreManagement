@@ -13,9 +13,18 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.table.DefaultTableModel;
 import oracle.jdbc.OracleTypes;
 
 public class KhachHangController {
+    
+    public void Add(ArrayList<KhachHangModel> arrkhmodel, DefaultTableModel table){
+        for(KhachHangModel i : arrkhmodel){
+            Object[] obj = {i.getMaKH(), i.getHoTen(), i.toString(i.getNgSinh()), i.getDiaChi(), i.getSDT(), i.getCCCD(), i.toString(i.getNgTao()), i.getGioiTinh()};
+            table.addRow(obj);
+        }
+    }
+    
     public ArrayList<KhachHangModel> getTCKhachHang() {
         ArrayList<KhachHangModel> khModel = new ArrayList<KhachHangModel>();
         Connection conn = null;

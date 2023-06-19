@@ -194,15 +194,14 @@ public class ChamCong extends javax.swing.JFrame {
     
     private void XemdsccBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_XemdsccBtnActionPerformed
         // TODO add your handling code here:
-        dispose();
         new DSChamCong(TenDNHome, MatKhauHome);
+        dispose();
     }//GEN-LAST:event_XemdsccBtnActionPerformed
 
     private void QlaiBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QlaiBtnActionPerformed
         // TODO add your handling code here:
-        dispose();
         new Home(TenDNHome, MatKhauHome);
-        
+        dispose();
     }//GEN-LAST:event_QlaiBtnActionPerformed
 
     private void BatDauBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BatDauBtnActionPerformed

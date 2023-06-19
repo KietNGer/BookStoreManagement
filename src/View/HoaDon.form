@@ -120,10 +120,8 @@
               <Font name="Times New Roman" size="16" style="1"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="3">
+              <StringArray count="1">
                 <StringItem index="0" value="M&#xe3; ho&#xe1; &#x111;&#x1a1;n"/>
-                <StringItem index="1" value="T&#xea;n nh&#xe2;n vi&#xea;n"/>
-                <StringItem index="2" value="T&#xea;n kh&#xe1;ch h&#xe0;ng"/>
               </StringArray>
             </Property>
           </Properties>

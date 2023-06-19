@@ -277,83 +277,96 @@ public class Home extends javax.swing.JFrame {
     private void NVienBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NVienBtnActionPerformed
         // TODO add your handling code here:
         TaiKhoanController tk = new TaiKhoanController();
+        dispose();
         if(tk.TraVeChucVu(TenDNHome, MatKhauHome) == 4){
             new TaiKhoan(TenDNHome, MatKhauHome);
         } else {
             new KhongHien(TenDNHome, MatKhauHome);
         }
-        this.dispose();
     }//GEN-LAST:event_NVienBtnActionPerformed
 
     private void NhaCCBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NhaCCBtnActionPerformed
         // TODO add your handling code here:
         TaiKhoanController tk = new TaiKhoanController();
+        dispose();
         if(tk.TraVeChucVu(TenDNHome, MatKhauHome) == 3 || tk.TraVeChucVu(TenDNHome, MatKhauHome) == 1){
             new KhongHien(TenDNHome, MatKhauHome);
         } else {
             new NhaPhanPhoi(TenDNHome, MatKhauHome);
         }
-        this.dispose();
     }//GEN-LAST:event_NhaCCBtnActionPerformed
 
     private void SachBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SachBtnActionPerformed
         // TODO add your handling code here:
         TaiKhoanController tk = new TaiKhoanController();
-        new Sach(TenDNHome, MatKhauHome);
-        this.dispose();
+        dispose();
+        if(tk.TraVeChucVu(TenDNHome, MatKhauHome) == 1) {
+            new KhongHien(TenDNHome, MatKhauHome);
+        } else {
+            new Sach(TenDNHome, MatKhauHome);
+        }
     }//GEN-LAST:event_SachBtnActionPerformed
 
     private void PhieuNhapBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PhieuNhapBtnActionPerformed
         // TODO add your handling code here:
         TaiKhoanController tk = new TaiKhoanController();
+        dispose();
         if(tk.TraVeChucVu(TenDNHome, MatKhauHome) == 3 || tk.TraVeChucVu(TenDNHome, MatKhauHome) == 1){
             new KhongHien(TenDNHome, MatKhauHome);
         } else {
             new PhieuNhapSach(TenDNHome, MatKhauHome);
         }
-        this.dispose();
     }//GEN-LAST:event_PhieuNhapBtnActionPerformed
 
     private void KHangBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KHangBtnActionPerformed
         // TODO add your handling code here:
         TaiKhoanController tk = new TaiKhoanController();
+        dispose();
         if(tk.TraVeChucVu(TenDNHome, MatKhauHome) == 2 || tk.TraVeChucVu(TenDNHome, MatKhauHome) == 1){
             new KhongHien(TenDNHome, MatKhauHome);
         } else {
             new KhachHang(TenDNHome, MatKhauHome);
         }
-        this.dispose();
     }//GEN-LAST:event_KHangBtnActionPerformed
 
     private void TLBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TLBtnActionPerformed
         // TODO add your handling code here:
         TaiKhoanController tk = new TaiKhoanController();
+        dispose();
         if(tk.TraVeChucVu(TenDNHome, MatKhauHome) == 4){
             new TheLoai(TenDNHome, MatKhauHome);
         } else {
             new KhongHien(TenDNHome, MatKhauHome);
         }
-        this.dispose();
     }//GEN-LAST:event_TLBtnActionPerformed
 
     private void HoaDonBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HoaDonBtnActionPerformed
         // TODO add your handling code here:
         TaiKhoanController tk = new TaiKhoanController();
-        new HoaDon(TenDNHome, MatKhauHome);
-        this.dispose();
+        dispose();
+        if(tk.TraVeChucVu(TenDNHome, MatKhauHome) == 1){
+            new TheLoai(TenDNHome, MatKhauHome);
+        } else {
+            new HoaDon(TenDNHome, MatKhauHome);
+        }
     }//GEN-LAST:event_HoaDonBtnActionPerformed
 
     private void ChamCongBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChamCongBtnActionPerformed
         // TODO add your handling code here:
         TaiKhoanController tk = new TaiKhoanController();
+        dispose();
         new ChamCong(TenDNHome, MatKhauHome);
-        this.dispose();
     }//GEN-LAST:event_ChamCongBtnActionPerformed
 
     private void LuongBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LuongBtnActionPerformed
         // TODO add your handling code here:
+        TaiKhoanController tk = new TaiKhoanController();
         dispose();
-        new Luong(TenDNHome, MatKhauHome);
+        if(tk.TraVeChucVu(TenDNHome, MatKhauHome) == 3 || tk.TraVeChucVu(TenDNHome, MatKhauHome) == 2){
+            new KhongHien(TenDNHome, MatKhauHome);
+        } else {
+            new Luong(TenDNHome, MatKhauHome);
+        }
     }//GEN-LAST:event_LuongBtnActionPerformed
 
     private void BaoCaoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BaoCaoBtnActionPerformed

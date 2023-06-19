@@ -31,8 +31,7 @@ public class CTPN extends javax.swing.JFrame {
     public String TenNV, TenNPP, NgayTaoPNS, TongGiaTienNhap;
     public TaiKhoanController tk = new TaiKhoanController();
     public PhieuNhapSachController pns = new PhieuNhapSachController();
-    public int ChucVu = tk.TraVeChucVu(TenDNHome, MatKhauHome);
-    DefaultTableModel table = new DefaultTableModel();
+    public DefaultTableModel table = new DefaultTableModel();
     
     public CTPN(String TDN, String MK, int ID, String TenNV, String TenNPP, String NgayTaoPNS, String TongGiaTienNhap){
         initComponents();

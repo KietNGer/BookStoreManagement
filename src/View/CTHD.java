@@ -32,8 +32,7 @@ public class CTHD extends javax.swing.JFrame {
     public int ID;
     public TaiKhoanController tk = new TaiKhoanController();
     public HoaDonController hd = new HoaDonController();
-    public int ChucVu = tk.TraVeChucVu(TenDNHome, MatKhauHome);
-    DefaultTableModel table = new DefaultTableModel();
+    public DefaultTableModel table = new DefaultTableModel();
     
     public CTHD(String TDN, String MK, int ID, String TenKH, String TenNV, String NgayTaoHD, String TriGia){
         initComponents();
